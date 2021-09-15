@@ -1,0 +1,16 @@
+<div class="container">
+  <p-breadcrumb [model]="items" [home]="home" *ngIf="items"></p-breadcrumb>
+  <div class="favourite" *ngIf="activeBeer">
+    <div><button button pButton type="button" style="display:flex;align-items: center;justify-content: center;" (click)="addToFavourites(activeBeer.id)">{{activeBeer?.selected?'Удалить из избранного':'Добавить в избранное'}}</button></div>
+  </div>
+  <div *ngIf="activeBeer" class="beer">
+    <div class="beer-image"><img [src]="activeBeer.image_url" [alt]="activeBeer.name" [title]="activeBeer.name"></div>
+    <div class="beer-info">
+      <div class="beer-title">{{activeBeer.name}}</div>
+      <div class="beer-detail"><b>Description: </b>{{activeBeer.description}}</div>
+      <div class="beer-detail"><b>Brewer tips: </b>{{activeBeer.brewers_tips}}</div>
+      <div class="beer-detail"><b>Contributed by: </b>{{activeBeer.contributed_by}}</div>
+    </div>
+  </div>
+</div>
+

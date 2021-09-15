@@ -1,0 +1,45 @@
+.favourite {
+  display: flex;
+  justify-content:flex-end;
+  margin-top: 10px;
+}
+
+.beer-info {
+  display: block;
+}
+
+.beer-image {
+  margin: 20px;
+
+  img {
+    height: 500px;
+    width: auto;
+  }
+}
+
+.beer {
+  width: 80%;
+  margin: 5% auto;
+  border: 1px solid rgb(224, 224, 224);
+  border-radius: 5px;
+  display: flex;
+  background-color: rgb(255, 246, 233);
+}
+
+.beer-title {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 800;
+  padding: 15px;
+}
+
+.beer-detail {
+  text-align: justify;
+  padding: 15px;
+  font-size: 20px;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto
+}
